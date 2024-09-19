@@ -5,7 +5,7 @@ object Dependencies {
 
 
   val scalajsdom  = Def.setting {
-    Seq("org.scala-js" %%% "scalajs-dom" % "2.4.0")
+    Seq("org.scala-js" %%% "scalajs-dom" %  DependencyVersions.scalajsdom)
   }
   val scalatest   :     Def.Initialize[Seq[ModuleID]] = Def.setting {
     Seq(
