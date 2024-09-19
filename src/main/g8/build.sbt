@@ -5,7 +5,7 @@ name := "mywebview"
 version := "0.0.1"
 
 
-lazy val webview = project.in(file("webview"))
+lazy val webview = project.in(file("modules/webview"))
   .enablePlugins(ScalaJSPlugin) // Enable the Scala.js plugin in this project
   .enablePlugins(ScalablyTypedConverterExternalNpmPlugin)
   .settings(
