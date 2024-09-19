@@ -1,0 +1,26 @@
+{
+  "name": "livechart",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "vscode:prepublish": "npm run compile",
+    "lint": "eslint src --ext ts",
+    "pretest": "npm run compile && npm run lint",
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "@scala-js/vite-plugin-scalajs": "^1.0.0",
+    "typescript": "^4.9.3",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+
+    "@types/vscode": "^1.46.0",
+
+    "vite": "^4.1.0",
+    "vscode-test": "^1.5.0"
+  }
+}
