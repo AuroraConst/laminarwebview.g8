@@ -12,6 +12,19 @@
     "pretest": "npm run compile && npm run lint",
     "compile": "tsc -p ./"
   },
+  "activationEvents": [
+    "onCommand:extension.helloWorld"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+
   "devDependencies": {
     "@scala-js/vite-plugin-scalajs": "^1.0.0",
     "typescript": "^4.9.3",
